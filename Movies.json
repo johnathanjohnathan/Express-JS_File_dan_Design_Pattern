@@ -1,0 +1,86 @@
+{
+  "info": {
+    "name": "Movies",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Movies",
+      "item": [
+        {
+          "name": "Delete Movies",
+          "event": [],
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "http://localhost:3000/movies/105"
+          }
+        },
+        {
+          "name": "Get Movies",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:3000/movies"
+          }
+        },
+        {
+          "name": "Post Movies",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "http://localhost:3000/movies",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\" : \"ContohFIlm\",\n  \"genre\" : \"Contoh\",\n  \"year\" : \"2024\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Update Movies",
+          "event": [],
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": "http://localhost:3000/movies/105",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\" : \"DocumentaryFIlm\",\n  \"genres\" : \"Documentary\",\n  \"year\" : \"2024\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Users",
+      "item": [
+        {
+          "name": "Get Users",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:3000/users/8"
+          }
+        }
+      ]
+    },
+    {
+      "name": "bruno",
+      "event": []
+    }
+  ],
+  "variable": []
+}

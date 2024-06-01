@@ -1,0 +1,19 @@
+meta {
+  name: Update Movies
+  type: http
+  seq: 4
+}
+
+patch {
+  url: http://localhost:3000/movies/105
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title" : "DocumentaryFIlm",
+    "genres" : "Documentary",
+    "year" : "2024"
+  }
+}
